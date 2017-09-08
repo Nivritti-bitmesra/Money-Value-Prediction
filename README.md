@@ -7,5 +7,5 @@ Least Mean Square algorithm is used to update the weights. I have also uploaded 
 
 Thank you.
 
-Data Source:- http://archive.ics.uci.edu/ml/datasets/Dow+Jones+Index
+Data Source:- https://www.quandl.com
 Programming Language- MATLAB.
