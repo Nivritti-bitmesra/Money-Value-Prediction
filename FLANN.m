@@ -1,14 +1,15 @@
 clc
 clear 
 %% Load Data
-Data=(importdata('Data.txt'))';
-TrData=Data(1:525); 
-TeData=Data(526:750);
+Data=(importdata('USData.txt'))';
+Data=fliplr(Data)
+TrData=Data(1:4345); 
+TeData=Data(4346:6208);
 %%
 w=rand(1,25);
 itr=10;
 %%
-for i=1:520
+for i=1:4340
 %     b=TrDate(i:i+5);
 %   for k=1:itr
   % expand TrData(i)
@@ -51,7 +52,7 @@ for i=1:520
   end
 end
 %% Predict Now
-for i=1:220
+for i=1:1857
 %     b=TrDate(i:i+5);
 %   for k=1:itr
   % expand TrData(i)
@@ -91,6 +92,5 @@ hold on
 plot(p,'--r');
 legend('Actual Data','Predicted Data')
 title('Prediction of Higest Money Value in a week (Using FLANN)');
-
 
 
