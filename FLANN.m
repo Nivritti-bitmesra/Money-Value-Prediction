@@ -1,6 +1,7 @@
+
 clc
 clear 
-%% Load Data
+%% By shiladitya Biswas
 Data=(importdata('USData.txt'))';
 Data=fliplr(Data)
 TrData=Data(1:4345); 
